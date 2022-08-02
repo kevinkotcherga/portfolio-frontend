@@ -1,8 +1,17 @@
+import Home from './pages/Home';
+import SelectedWorks from './pages/SelectedWorks';
+import Contact from './pages/Contact';
+
+import { UseEffectScroll } from 'react-use-smooth-scroll';
+import 'react-use-smooth-scroll/dist/index.css';
+
 function App() {
 	return (
-		<div className="App">
-			<p>Hello</p>
-		</div>
+		<UseEffectScroll>
+			<Home />
+			<SelectedWorks />
+			<Contact />
+		</UseEffectScroll>
 	);
 }
 
