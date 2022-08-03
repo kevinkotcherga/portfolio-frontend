@@ -11,14 +11,14 @@ const MainContainer = styled.div`
 const Title = styled.p`
 	font-weight: normal;
 	text-align: center;
-	padding: 200px 0;
+	padding: 150px 0;
 	font-size: 50px;
 	font-family: 'Italiana', serif;
 	position: relative;
 `;
 
 const Asterisk = styled.span`
-	top: 190px;
+	top: 150px;
 	position: absolute;
 	font-family: 'Viaoda Libre';
 	font-size: 20px;

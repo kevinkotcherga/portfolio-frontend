@@ -11,22 +11,31 @@ const MainContainer = styled.div`
 const Header = styled.div`
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 40px 0 40px;
-	font-size: 26px;
+	font-size: 20px;
 	font-family: 'Belleza', sans-serif;
 	color: #242423;
+	position: fixed;
+	width: 100%;
+	text-transform: uppercase;
 `;
 
-const ProfilInformation = styled.div``;
+const ProfilInformation = styled.div`
+	margin: 40px;
+`;
+
 const Name = styled.p``;
+
 const City = styled.p`
 	color: #545454;
 `;
 
-const Navbar = styled.div``;
+const Navbar = styled.div`
+	margin: 40px;
+`;
+
 const Link = styled.span`
-	margin-left: 25px;
 	cursor: pointer;
+	margin-left: 25px;
 `;
 
 const Container = styled.div`

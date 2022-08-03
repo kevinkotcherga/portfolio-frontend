@@ -21,7 +21,7 @@ const ContainerDescription = styled.div`
 	text-align: center;
 	font-family: 'Belleza', sans-serif;
 	font-size: 16px;
-	margin: 20px 0 200px 0;
+	margin: 30px 0 200px 0;
 `;
 
 const Name = styled.div``;
