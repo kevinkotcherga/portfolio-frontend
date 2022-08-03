@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BubblesLink from '../components/BubblesLink';
 
 const MainContainer = styled.div`
 	height: 100vh;
@@ -89,6 +90,7 @@ const Home = () => {
 					Spécialisé React, Javascript & Typescript
 				</Description>
 			</Container>
+			<BubblesLink />
 		</MainContainer>
 	);
 };
