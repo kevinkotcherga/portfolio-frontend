@@ -4,7 +4,7 @@ import BubblesLink from '../components/BubblesLink';
 
 const Container = styled.div`
 	height: 101vh;
-	background-color: #ccd5ae;
+	background-color: #fefae0;
 	display: flex;
 	justify-content: center;
 	align-items: center;

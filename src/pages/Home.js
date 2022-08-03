@@ -23,7 +23,9 @@ const ProfilInformation = styled.div`
 	margin: 40px;
 `;
 
-const Name = styled.p``;
+const Name = styled.p`
+	margin-bottom: 8px;
+`;
 
 const City = styled.p`
 	color: #545454;
