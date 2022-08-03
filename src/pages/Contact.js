@@ -1,16 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { MouseParallax, ScrollParallax } from 'react-just-parallax';
-
 const Container = styled.div`
 	height: 100vh;
 	background-color: #ccd5ae;
-	font-family: 'Italiana', serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+const Wrapper = styled.div`
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 const Text = styled.p`
-	font-size: 20rem;
+	font-family: 'Italiana', serif;
+	font-size: 12rem;
 	text-align: center;
 	color: #fefefe;
 `;
@@ -18,7 +26,9 @@ const Text = styled.p`
 const Contact = () => {
 	return (
 		<Container>
-			<Text>Rencontrons nous</Text>
+			<Wrapper>
+				<Text>Contactez moi</Text>
+			</Wrapper>
 		</Container>
 	);
 };
