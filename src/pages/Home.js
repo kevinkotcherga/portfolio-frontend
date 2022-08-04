@@ -51,11 +51,27 @@ const Link = styled.span`
 	margin-left: 25px;
 `;
 
+const BubbleContainer = styled.div`
+	display: flex;
+`;
+
+const BubbleText = styled.div`
+	:before {
+	}
+	:hover:after {
+		content: 'Développeur Web';
+	}
+`;
+
 const Bubble = styled.span`
 	width: 25px;
 	height: 25px;
 	margin-left: 25px;
 	background-color: #242423;
+	width: 30px;
+	height: 30px;
+	width: 30px;
+	height: 30px;
 	color: #fefae0;
 	border-radius: 50%;
 	display: flex;
@@ -63,6 +79,11 @@ const Bubble = styled.span`
 	align-items: center;
 	cursor: pointer;
 	align-items: center;
+	:hover {
+		border-radius: 20px;
+		width: 200px;
+		transition: 0.5s;
+	}
 `;
 
 const Container = styled.div`
@@ -111,9 +132,12 @@ const Home = () => {
 					<Link>Projets</Link>
 					<Link>Profil</Link>
 					<Link>Contact</Link>
-					<Bubble>
-						<EmailOutlinedIcon sx={{ color: '#fefae0', fontSize: 15 }} />
-					</Bubble>
+					<BubbleContainer>
+						<Bubble>
+							<EmailOutlinedIcon sx={{ color: '#fefae0', fontSize: 15 }} />
+						</Bubble>
+						<BubbleText />
+					</BubbleContainer>
 				</Navbar>
 			</Header>
 			<Container>
