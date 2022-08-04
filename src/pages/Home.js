@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const MainContainer = styled.div`
 	height: 100vh;
@@ -11,12 +12,13 @@ const MainContainer = styled.div`
 const Header = styled.div`
 	display: flex;
 	justify-content: space-between;
-	font-size: 20px;
+	font-size: 15px;
 	font-family: 'Belleza', sans-serif;
 	color: #242423;
 	position: fixed;
 	width: 100%;
 	text-transform: uppercase;
+	z-index: 99;
 `;
 
 const ProfilInformation = styled.div`
@@ -25,6 +27,13 @@ const ProfilInformation = styled.div`
 
 const Name = styled.p`
 	margin-bottom: 8px;
+	cursor: pointer;
+	:after {
+		content: 'Kevin Kotcherga';
+	}
+	:hover:after {
+		content: 'Développeur Web';
+	}
 `;
 
 const City = styled.p`
@@ -33,11 +42,27 @@ const City = styled.p`
 
 const Navbar = styled.div`
 	margin: 40px;
+	display: flex;
+	align-items: center;
 `;
 
 const Link = styled.span`
 	cursor: pointer;
 	margin-left: 25px;
+`;
+
+const Bubble = styled.span`
+	width: 25px;
+	height: 25px;
+	margin-left: 25px;
+	background-color: #242423;
+	color: #fefae0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	align-items: center;
 `;
 
 const Container = styled.div`
@@ -79,13 +104,16 @@ const Home = () => {
 		<MainContainer>
 			<Header>
 				<ProfilInformation>
-					<Name>Kevin Kotcherga</Name>
+					<Name />
 					<City>Paris, France</City>
 				</ProfilInformation>
 				<Navbar>
 					<Link>Projets</Link>
 					<Link>Profil</Link>
 					<Link>Contact</Link>
+					<Bubble>
+						<EmailOutlinedIcon sx={{ color: '#fefae0', fontSize: 15 }} />
+					</Bubble>
 				</Navbar>
 			</Header>
 			<Container>
