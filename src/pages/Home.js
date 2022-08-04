@@ -12,7 +12,7 @@ const MainContainer = styled.div`
 const Header = styled.div`
 	display: flex;
 	justify-content: space-between;
-	font-size: 15px;
+	font-size: 14px;
 	font-family: 'Belleza', sans-serif;
 	color: #242423;
 	position: fixed;
@@ -51,6 +51,7 @@ const Navbar = styled.div`
 const Link = styled.span`
 	cursor: pointer;
 	margin-left: 25px;
+	text-transform: uppercase;
 `;
 
 const BubbleContainer = styled.div`
@@ -99,7 +100,7 @@ const Container = styled.div`
 
 const Date = styled.p`
 	font-family: 'Viaoda Libre';
-	font-size: 20px;
+	font-size: 18px;
 	color: #545454;
 `;
 
@@ -111,7 +112,7 @@ const TitleName = styled.h1`
 `;
 
 const Description = styled.p`
-	font-size: 25px;
+	font-size: 22px;
 	font-family: 'Belleza', sans-serif;
 	line-height: 50px;
 `;
