@@ -17,16 +17,18 @@ const Header = styled.div`
 	color: #242423;
 	position: fixed;
 	width: 100%;
-	text-transform: uppercase;
+
 	z-index: 99;
 `;
 
 const ProfilInformation = styled.div`
 	margin: 40px;
+	line-height: 12px;
 `;
 
 const Name = styled.p`
 	margin-bottom: 8px;
+	text-transform: uppercase;
 	cursor: pointer;
 	:after {
 		content: 'Kevin Kotcherga';
