@@ -11,8 +11,9 @@ const BubbleContainer = styled.div`
 `;
 
 const BubbleLink = styled.div`
-	width: 35px;
-	height: 35px;
+	width: 30px;
+	height: 30px;
+	font-size: 15px;
 	background-color: #242423;
 	color: #fefae0;
 	border-radius: 50%;

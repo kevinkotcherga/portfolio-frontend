@@ -76,7 +76,7 @@ const Container = styled.div`
 
 const Date = styled.p`
 	font-family: 'Viaoda Libre';
-	font-size: 24px;
+	font-size: 20px;
 	color: #545454;
 `;
 
@@ -88,7 +88,7 @@ const TitleName = styled.h1`
 `;
 
 const Description = styled.p`
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Belleza', sans-serif;
 	line-height: 50px;
 `;
