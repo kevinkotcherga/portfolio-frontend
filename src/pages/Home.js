@@ -154,8 +154,9 @@ const Home = () => {
 							onMouseEnter={() => setHover(true)}
 							onMouseLeave={() => setHover(false)}
 							style={{
-								height: hover ? 1 : 0,
-								opacity: hover ? 'auto' : 0,
+								height: hover ? 'auto' : 0,
+								width: hover ? 'auto' : 0,
+								opacity: hover ? 1 : 0,
 								cursor: 'pointer',
 								transition: 'opacity 1s ease-out',
 								overflow: 'hidden',
