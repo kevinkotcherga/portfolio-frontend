@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -55,26 +55,21 @@ const Link = styled.span`
 `;
 
 const BubbleContainer = styled.div`
+	gap: 5px;
+	margin-left: 25px;
+	padding: 5px;
+	border-radius: 15px;
 	display: flex;
+	align-items: center;
 `;
 
 const BubbleText = styled.div`
-	:before {
-	}
-	:hover:after {
-		content: 'Développeur Web';
-	}
+	text-transform: uppercase;
+	display: flex;
 `;
 
 const Bubble = styled.span`
-	width: 25px;
-	height: 25px;
-	margin-left: 25px;
 	background-color: #242423;
-	width: 30px;
-	height: 30px;
-	width: 30px;
-	height: 30px;
 	color: #fefae0;
 	border-radius: 50%;
 	display: flex;
@@ -82,11 +77,6 @@ const Bubble = styled.span`
 	align-items: center;
 	cursor: pointer;
 	align-items: center;
-	:hover {
-		border-radius: 20px;
-		width: 200px;
-		transition: 0.5s;
-	}
 `;
 
 const Container = styled.div`
@@ -124,6 +114,8 @@ const SurroundedBlock = styled.span`
 `;
 
 const Home = () => {
+	const [hover, setHover] = useState(false);
+
 	return (
 		<MainContainer>
 			<Header>
@@ -135,11 +127,42 @@ const Home = () => {
 					<Link>Projets</Link>
 					<Link>Profil</Link>
 					<Link>Contact</Link>
-					<BubbleContainer>
-						<Bubble>
-							<EmailOutlinedIcon sx={{ color: '#fefae0', fontSize: 15 }} />
+					<BubbleContainer
+						onMouseEnter={() => setHover(true)}
+						onMouseLeave={() => setHover(false)}
+						style={{
+							backgroundColor: hover ? '#fefefe' : 'transparent',
+						}}
+					>
+						<Bubble
+							onMouseEnter={() => setHover(true)}
+							onMouseLeave={() => setHover(false)}
+							style={{
+								width: hover ? '15px' : '25px',
+								height: hover ? '15px' : '25px',
+							}}
+						>
+							<EmailOutlinedIcon
+								sx={{
+									color: '#fefae0',
+									fontSize: hover ? 10 : 13,
+									transition: 1,
+								}}
+							/>
 						</Bubble>
-						<BubbleText />
+						<BubbleText
+							onMouseEnter={() => setHover(true)}
+							onMouseLeave={() => setHover(false)}
+							style={{
+								height: hover ? 1 : 0,
+								opacity: hover ? 'auto' : 0,
+								cursor: 'pointer',
+								transition: 'opacity 1s ease-out',
+								overflow: 'hidden',
+							}}
+						>
+							kevin.kotcherga@gmail.com
+						</BubbleText>
 					</BubbleContainer>
 				</Navbar>
 			</Header>
