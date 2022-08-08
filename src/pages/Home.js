@@ -46,38 +46,36 @@ const Navbar = styled.div`
 	margin: 40px;
 	display: flex;
 	align-items: center;
+	gap: 25px;
 `;
 
 const Link = styled.span`
 	cursor: pointer;
-	margin-left: 25px;
 	text-transform: uppercase;
 `;
 
 const BubbleContainer = styled.div`
-	gap: 5px;
-	margin-left: 25px;
-	padding: 5px;
-	border-radius: 15px;
 	display: flex;
-	align-items: center;
-`;
-
-const BubbleText = styled.div`
-	text-transform: uppercase;
-	display: flex;
-`;
-
-const Bubble = styled.span`
-	background-color: #242423;
-	color: #fefae0;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 12.5px;
 	cursor: pointer;
+	transition: 0.8s;
 	align-items: center;
+	:hover {
+		width: 200px;
+		border-radius: 25px;
+	}
 `;
+
+const Bubble = styled.div`
+	height: 25px;
+	width: 25px;
+	border-radius: 12.5px;
+	background-color: #242423;
+`;
+const BubbleText = styled.div``;
 
 const Container = styled.div`
 	position: absolute;
@@ -130,40 +128,18 @@ const Home = () => {
 					<BubbleContainer
 						onMouseEnter={() => setHover(true)}
 						onMouseLeave={() => setHover(false)}
-						style={{
-							backgroundColor: hover ? '#fefefe' : 'transparent',
-						}}
 					>
 						<Bubble
-							onMouseEnter={() => setHover(true)}
-							onMouseLeave={() => setHover(false)}
 							style={{
-								width: hover ? '15px' : '25px',
-								height: hover ? '15px' : '25px',
+								height: hover ? 15 : 25,
+								width: hover ? 15 : 25,
+								borderRadius: hover ? '12,5px' : '7,5px',
+								transition: '0.8s',
 							}}
-						>
-							<EmailOutlinedIcon
-								sx={{
-									color: '#fefae0',
-									fontSize: hover ? 10 : 13,
-									transition: 1,
-								}}
-							/>
-						</Bubble>
-						<BubbleText
-							onMouseEnter={() => setHover(true)}
-							onMouseLeave={() => setHover(false)}
-							style={{
-								height: hover ? 'auto' : 0,
-								width: hover ? 'auto' : 0,
-								opacity: hover ? 1 : 0,
-								cursor: 'pointer',
-								transition: 'opacity 1s ease-out',
-								overflow: 'hidden',
-							}}
-						>
+						/>
+						{/* <BubbleText style={{ display: hover ? 'inline' : 'none' }}>
 							kevin.kotcherga@gmail.com
-						</BubbleText>
+						</BubbleText> */}
 					</BubbleContainer>
 				</Navbar>
 			</Header>
