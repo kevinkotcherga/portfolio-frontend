@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { Translate } from '@mui/icons-material';
 
 const MainContainer = styled.div`
 	height: 100vh;
@@ -137,9 +138,15 @@ const Home = () => {
 								transition: '0.8s',
 							}}
 						/>
-						{/* <BubbleText style={{ display: hover ? 'inline' : 'none' }}>
+						<BubbleText
+							style={{
+								display: hover ? 'block' : 'none',
+								opacity: hover ? 1 : 0,
+								transition: 3,
+							}}
+						>
 							kevin.kotcherga@gmail.com
-						</BubbleText> */}
+						</BubbleText>
 					</BubbleContainer>
 				</Navbar>
 			</Header>
