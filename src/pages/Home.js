@@ -68,6 +68,11 @@ const BubbleContainer = styled.div`
 		width: 200px;
 		border-radius: 25px;
 	}
+	:hover:after {
+		content: 'kevin.kotcherga@gmail.com';
+		color: black;
+		transition: 1s;
+	}
 `;
 
 const Bubble = styled.div`
@@ -75,8 +80,17 @@ const Bubble = styled.div`
 	width: 25px;
 	border-radius: 12.5px;
 	background-color: #242423;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* :after {
+		transform: translateX(0px);
+		content: 'kevin.kotcherga@gmail.com';
+	} */
 `;
-const BubbleText = styled.div``;
+const BubbleText = styled.div`
+	transition-duration: 1s, 0s;
+`;
 
 const Container = styled.div`
 	position: absolute;
@@ -136,17 +150,25 @@ const Home = () => {
 								width: hover ? 15 : 25,
 								borderRadius: hover ? '12,5px' : '7,5px',
 								transition: '0.8s',
+								content: 'hello',
 							}}
-						/>
-						<BubbleText
+						>
+							<EmailOutlinedIcon
+								sx={{
+									color: '#fefae0',
+									height: hover ? 10 : 15,
+									width: hover ? 10 : 15,
+								}}
+							/>
+						</Bubble>
+						{/* <BubbleText
 							style={{
-								display: hover ? 'block' : 'none',
+								width: hover ? '100%' : 0,
 								opacity: hover ? 1 : 0,
-								transition: 3,
 							}}
 						>
 							kevin.kotcherga@gmail.com
-						</BubbleText>
+						</BubbleText> */}
 					</BubbleContainer>
 				</Navbar>
 			</Header>
