@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { Translate } from '@mui/icons-material';
 
 const MainContainer = styled.div`
 	height: 100vh;
@@ -57,21 +56,16 @@ const Link = styled.span`
 
 const BubbleContainer = styled.div`
 	display: flex;
+	align-items: center;
 	height: 25px;
 	width: 25px;
 	background-color: white;
 	border-radius: 12.5px;
 	cursor: pointer;
-	transition: 0.8s;
-	align-items: center;
+	transition: 1s;
 	:hover {
-		width: 200px;
+		width: 250px;
 		border-radius: 25px;
-	}
-	:hover:after {
-		content: 'kevin.kotcherga@gmail.com';
-		color: black;
-		transition: 1s;
 	}
 `;
 
@@ -83,13 +77,12 @@ const Bubble = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* :after {
-		transform: translateX(0px);
-		content: 'kevin.kotcherga@gmail.com';
-	} */
 `;
-const BubbleText = styled.div`
-	transition-duration: 1s, 0s;
+
+const BubbleMessage = styled.p`
+	text-transform: uppercase;
+	overflow: hidden;
+	margin-left: 5px;
 `;
 
 const Container = styled.div`
@@ -146,11 +139,11 @@ const Home = () => {
 					>
 						<Bubble
 							style={{
-								height: hover ? 15 : 25,
-								width: hover ? 15 : 25,
+								height: hover ? 17 : 25,
+								width: hover ? 17 : 25,
 								borderRadius: hover ? '12,5px' : '7,5px',
 								transition: '0.8s',
-								content: 'hello',
+								marginLeft: hover ? '5px' : 0,
 							}}
 						>
 							<EmailOutlinedIcon
@@ -158,17 +151,17 @@ const Home = () => {
 									color: '#fefae0',
 									height: hover ? 10 : 15,
 									width: hover ? 10 : 15,
+									transition: '0.8s',
 								}}
 							/>
 						</Bubble>
-						{/* <BubbleText
+						<BubbleMessage
 							style={{
-								width: hover ? '100%' : 0,
-								opacity: hover ? 1 : 0,
+								display: hover ? 'block' : 'none',
 							}}
 						>
 							kevin.kotcherga@gmail.com
-						</BubbleText> */}
+						</BubbleMessage>
 					</BubbleContainer>
 				</Navbar>
 			</Header>
