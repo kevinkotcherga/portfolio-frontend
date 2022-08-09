@@ -5,7 +5,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const MainContainer = styled.div`
 	height: 100vh;
-	background-color: #fefae0;
+	background-color: #000;
 	position: relative;
 `;
 
@@ -14,7 +14,6 @@ const Header = styled.div`
 	justify-content: space-between;
 	font-size: 14px;
 	font-family: 'Belleza', sans-serif;
-	color: #242423;
 	position: fixed;
 	width: 100%;
 	z-index: 99;
@@ -23,6 +22,9 @@ const Header = styled.div`
 const ProfilInformation = styled.div`
 	margin: 40px;
 	line-height: 12px;
+	background-image: linear-gradient(-40deg, #ff7e00, #ffd300);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 `;
 
 const Name = styled.p`
@@ -38,15 +40,16 @@ const Name = styled.p`
 	}
 `;
 
-const City = styled.p`
-	color: #545454;
-`;
+const City = styled.p``;
 
 const Navbar = styled.div`
 	margin: 40px;
 	display: flex;
 	align-items: center;
 	gap: 25px;
+	background-image: linear-gradient(0deg, #ff7e00 10%, #ffd300 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 `;
 
 const Link = styled.span`
@@ -59,7 +62,7 @@ const BubbleContainer = styled.div`
 	align-items: center;
 	height: 25px;
 	width: 25px;
-	background-color: white;
+	background-color: #ffae5d;
 	border-radius: 12.5px;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
@@ -73,7 +76,7 @@ const Bubble = styled.div`
 	height: 25px;
 	width: 25px;
 	border-radius: 12.5px;
-	background-color: #242423;
+	background-color: #ff7e00;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -82,6 +85,7 @@ const Bubble = styled.div`
 const BubbleMessage = styled.p`
 	text-transform: uppercase;
 	overflow: hidden;
+	color: black;
 `;
 
 const Container = styled.div`
@@ -96,9 +100,9 @@ const Container = styled.div`
 const Date = styled.p`
 	font-family: 'Viaoda Libre';
 	font-size: 18px;
-	color: #545454;
 	text-transform: uppercase;
 	margin-bottom: 50px;
+	color: #ffd300;
 `;
 
 const TitleName = styled.h1`
@@ -106,6 +110,9 @@ const TitleName = styled.h1`
 	font-family: 'Zighead', serif;
 	font-size: 220px;
 	text-transform: uppercase;
+	background: -webkit-linear-gradient(#ffd300, #ff7e00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 `;
 
 const Description = styled.p`
@@ -113,6 +120,10 @@ const Description = styled.p`
 	font-family: 'Belleza', sans-serif;
 	line-height: 50px;
 	text-transform: uppercase;
+	color: #ff7e00;
+	background-image: linear-gradient(-40deg, #ff7e00, #ffd300);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 `;
 
 const SurroundedBlock = styled.span`
@@ -150,7 +161,7 @@ const Home = () => {
 						>
 							<EmailOutlinedIcon
 								sx={{
-									color: '#fefae0',
+									color: 'black',
 									height: hover ? 10 : 15,
 									width: hover ? 10 : 15,
 									transition: '0.3s ease-in-out',

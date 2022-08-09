@@ -4,7 +4,9 @@ import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data';
 
 const MainContainer = styled.div`
-	background-color: #faedcd;
+	border-top: 1px solid #ffd300;
+	border-bottom: 1px solid #ffd300;
+	background-color: #000;
 	color: #242423;
 `;
 
@@ -15,6 +17,9 @@ const Title = styled.p`
 	font-size: 50px;
 	font-family: 'Italiana', serif;
 	position: relative;
+	background-image: linear-gradient(10deg, #ffd300, #ff7e00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 `;
 
 const Asterisk = styled.span`
@@ -22,6 +27,9 @@ const Asterisk = styled.span`
 	position: absolute;
 	font-family: 'Viaoda Libre';
 	font-size: 20px;
+	background-image: linear-gradient(10deg, #ffd300, #ff7e00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 `;
 
 const Container = styled.div`
