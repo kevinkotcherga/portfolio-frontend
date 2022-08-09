@@ -82,7 +82,6 @@ const Bubble = styled.div`
 const BubbleMessage = styled.p`
 	text-transform: uppercase;
 	overflow: hidden;
-	margin-left: 5px;
 `;
 
 const Container = styled.div`
@@ -157,7 +156,10 @@ const Home = () => {
 						</Bubble>
 						<BubbleMessage
 							style={{
-								display: hover ? 'block' : 'none',
+								width: hover ? '100%' : 0,
+								opacity: hover ? 1 : 0,
+								marginLeft: hover ? '5px' : 0,
+								transition: hover ? 'opacity 2s ease-in-out' : '',
 							}}
 						>
 							kevin.kotcherga@gmail.com
