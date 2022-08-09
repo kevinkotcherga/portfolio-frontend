@@ -17,7 +17,6 @@ const Header = styled.div`
 	color: #242423;
 	position: fixed;
 	width: 100%;
-
 	z-index: 99;
 `;
 
@@ -35,6 +34,7 @@ const Name = styled.p`
 	}
 	:hover:after {
 		content: 'Développeur Web';
+		font-family: 'Zighead', serif;
 	}
 `;
 
@@ -97,11 +97,13 @@ const Date = styled.p`
 	font-family: 'Viaoda Libre';
 	font-size: 18px;
 	color: #545454;
+	text-transform: uppercase;
+	margin-bottom: 50px;
 `;
 
 const TitleName = styled.h1`
 	font-weight: normal;
-	font-family: 'Italiana', serif;
+	font-family: 'Zighead', serif;
 	font-size: 220px;
 	text-transform: uppercase;
 `;
@@ -110,6 +112,7 @@ const Description = styled.p`
 	font-size: 22px;
 	font-family: 'Belleza', sans-serif;
 	line-height: 50px;
+	text-transform: uppercase;
 `;
 
 const SurroundedBlock = styled.span`
@@ -141,7 +144,7 @@ const Home = () => {
 								height: hover ? 17 : 25,
 								width: hover ? 17 : 25,
 								borderRadius: hover ? '12,5px' : '7,5px',
-								transition: '0.5s ease-in-out',
+								transition: '0.3s ease-in-out',
 								marginLeft: hover ? '5px' : 0,
 							}}
 						>
@@ -150,7 +153,7 @@ const Home = () => {
 									color: '#fefae0',
 									height: hover ? 10 : 15,
 									width: hover ? 10 : 15,
-									transition: '0.5s ease-in-out',
+									transition: '0.3s ease-in-out',
 								}}
 							/>
 						</Bubble>

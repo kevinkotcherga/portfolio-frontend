@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Zighead";
+  src: local("Zighead"),
+    url("./fonts/Zighead/Zighead.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Remboy";
+  src: local("Remboy"),
+    url("./fonts/Remboy/RemboyRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Branch";
+  src: local("Branch"),
+    url("./fonts/Branch/Branch.otf") format("opentype"),
+    url("./fonts/Branch/Branch.ttf") format("truetype");
+}
