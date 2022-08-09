@@ -4,7 +4,7 @@ import BubblesLink from '../components/BubblesLink';
 
 const Container = styled.div`
 	height: 101vh;
-	background-color: #000;
+	background-color: #e9edc9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,9 +23,7 @@ const Text = styled.p`
 	font-family: 'Italiana', serif;
 	font-size: 300px;
 	text-align: center;
-	background-image: linear-gradient(0deg, #ffd300, #ff7e00);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #0b0b0b;
 
 	display: inline-block;
 	position: relative;
@@ -37,7 +35,7 @@ const Text = styled.p`
 		bottom: 0;
 		width: 0;
 		height: 1px;
-		background-image: linear-gradient(10deg, #ffd300, #ff7e00);
+		background-color: #0b0b0b;
 		transition: width 0.25s ease-out;
 	}
 	:hover::before {
