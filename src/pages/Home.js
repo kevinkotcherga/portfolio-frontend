@@ -62,7 +62,7 @@ const BubbleContainer = styled.div`
 	background-color: white;
 	border-radius: 12.5px;
 	cursor: pointer;
-	transition: 0.8s ease-out;
+	transition: 0.5s ease-in-out;
 	:hover {
 		width: 250px;
 		border-radius: 25px;
@@ -141,7 +141,7 @@ const Home = () => {
 								height: hover ? 17 : 25,
 								width: hover ? 17 : 25,
 								borderRadius: hover ? '12,5px' : '7,5px',
-								transition: '0.8s ease-in-out',
+								transition: '0.5s ease-in-out',
 								marginLeft: hover ? '5px' : 0,
 							}}
 						>
@@ -150,7 +150,7 @@ const Home = () => {
 									color: '#fefae0',
 									height: hover ? 10 : 15,
 									width: hover ? 10 : 15,
-									transition: '0.8s ease-in-out',
+									transition: '0.5s ease-in-out',
 								}}
 							/>
 						</Bubble>
@@ -159,7 +159,7 @@ const Home = () => {
 								width: hover ? '100%' : 0,
 								opacity: hover ? 1 : 0,
 								marginLeft: hover ? '5px' : 0,
-								transition: hover ? 'opacity 2s ease-in-out' : '',
+								transition: hover ? 'opacity 1.4s ease-in-out' : '',
 							}}
 						>
 							kevin.kotcherga@gmail.com
