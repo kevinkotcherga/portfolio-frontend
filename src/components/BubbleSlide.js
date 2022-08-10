@@ -6,7 +6,7 @@ const BubbleContainer = styled.div`
 	display: flex;
 	align-items: center;
 	height: 25px;
-	background-color: white;
+	background-color: #fdfefa;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
 `;
@@ -32,6 +32,7 @@ const BubbleSlide = ({ type }) => {
 	let message;
 	let icon;
 	let width;
+
 	if (type === 'email') {
 		message = 'kevin.kotcherga@gmail.com';
 		icon = (
@@ -83,7 +84,7 @@ const BubbleSlide = ({ type }) => {
 					width: hover ? '100%' : 0,
 					opacity: hover ? 1 : 0,
 					marginLeft: hover ? '5px' : 0,
-					transition: hover ? 'opacity 1.4s ease-in-out' : '',
+					transition: hover ? 'opacity 1.6s ease-in-out' : '',
 					color: '#000',
 				}}
 			>

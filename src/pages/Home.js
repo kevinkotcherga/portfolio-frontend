@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
 import BubbleSlide from '../components/BubbleSlide';
+import { useState } from 'react';
 
 const MainContainer = styled.div`
 	height: 100vh;
@@ -21,7 +22,7 @@ const Header = styled.div`
 const ProfilInformation = styled.div`
 	margin: 40px;
 	line-height: 12px;
-	color: #1b1f0a;
+	color: #0b0b0b;
 `;
 
 const Name = styled.p`
@@ -43,12 +44,29 @@ const Navbar = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 25px;
-	color: #1b1f0a;
+	color: #0b0b0b;
 `;
 
 const Link = styled.span`
 	cursor: pointer;
 	text-transform: uppercase;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s ease-out;
+	::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 20px;
+		width: 0;
+		height: 1px;
+		background-color: #0b0b0b;
+		transition: width 0.3s ease-out;
+	}
+	:hover::before {
+		width: 100%;
+	}
 `;
 
 const Container = styled.div`
@@ -62,7 +80,7 @@ const Container = styled.div`
 const Date = styled.p`
 	font-family: 'Viaoda Libre';
 	font-size: 15px;
-	color: #353e14;
+	color: #0b0b0b;
 	font-style: italic;
 	margin-bottom: 30px;
 `;
@@ -72,7 +90,7 @@ const TitleName = styled.h1`
 	font-family: 'Zighead', serif;
 	font-size: 12vw;
 	text-transform: uppercase;
-	color: #1b1f0a;
+	color: #0b0b0b;
 `;
 
 const Description = styled.p`
@@ -80,7 +98,7 @@ const Description = styled.p`
 	font-family: 'Belleza', sans-serif;
 	line-height: 30px;
 	text-transform: uppercase;
-	color: #353e14;
+	color: #0b0b0b;
 `;
 
 const SurroundedBlock = styled.span`
@@ -90,6 +108,10 @@ const SurroundedBlock = styled.span`
 `;
 
 const Home = () => {
+	const [hoverProjects, setHoverProjects] = useState(false);
+	const [hoverProfil, setHoverProfil] = useState(false);
+	const [hoverContact, setHoverContact] = useState(false);
+
 	return (
 		<MainContainer>
 			<Header>
@@ -98,9 +120,27 @@ const Home = () => {
 					<City>Paris, France</City>
 				</ProfilInformation>
 				<Navbar>
-					<Link>Projets</Link>
-					<Link>Profil</Link>
-					<Link>Contact</Link>
+					<Link
+						onMouseEnter={() => setHoverProjects(true)}
+						onMouseLeave={() => setHoverProjects(false)}
+						style={{ opacity: hoverProfil || hoverContact ? 0.24 : 1 }}
+					>
+						Projets
+					</Link>
+					<Link
+						onMouseEnter={() => setHoverProfil(true)}
+						onMouseLeave={() => setHoverProfil(false)}
+						style={{ opacity: hoverProjects || hoverContact ? 0.24 : 1 }}
+					>
+						Profil
+					</Link>
+					<Link
+						onMouseEnter={() => setHoverContact(true)}
+						onMouseLeave={() => setHoverContact(false)}
+						style={{ opacity: hoverProjects || hoverProfil ? 0.24 : 1 }}
+					>
+						Contact
+					</Link>
 					<BubbleSlide type="email" />
 				</Navbar>
 			</Header>

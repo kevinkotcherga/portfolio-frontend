@@ -24,7 +24,6 @@ const Text = styled.p`
 	font-size: 300px;
 	text-align: center;
 	color: #0b0b0b;
-
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
@@ -36,7 +35,7 @@ const Text = styled.p`
 		width: 0;
 		height: 1px;
 		background-color: #0b0b0b;
-		transition: width 0.25s ease-out;
+		transition: width 0.3s ease-out;
 	}
 	:hover::before {
 		width: 100%;
