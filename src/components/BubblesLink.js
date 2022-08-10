@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BubbleSlide from './BubbleSlide';
 
 const BubbleContainer = styled.div`
 	display: flex;
@@ -26,9 +27,9 @@ const BubbleLink = styled.div`
 const BubblesLink = () => {
 	return (
 		<BubbleContainer>
-			<BubbleLink>IN</BubbleLink>
-			<BubbleLink>GH</BubbleLink>
-			<BubbleLink>EM</BubbleLink>
+			<BubbleSlide />
+			<BubbleSlide />
+			<BubbleSlide />
 		</BubbleContainer>
 	);
 };

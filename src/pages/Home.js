@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import BubbleSlide from '../components/BubbleSlide';
 
 const MainContainer = styled.div`
 	height: 100vh;
@@ -22,7 +23,7 @@ const Header = styled.div`
 const ProfilInformation = styled.div`
 	margin: 40px;
 	line-height: 12px;
-	color: #0b0b0b;
+	color: #1b1f0a;
 `;
 
 const Name = styled.p`
@@ -44,7 +45,7 @@ const Navbar = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 25px;
-	color: #0b0b0b;
+	color: #1b1f0a;
 `;
 
 const Link = styled.span`
@@ -71,7 +72,7 @@ const Bubble = styled.div`
 	height: 25px;
 	width: 25px;
 	border-radius: 12.5px;
-	background-color: #0b0b0b;
+	background-color: #1b1f0a;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -80,7 +81,7 @@ const Bubble = styled.div`
 const BubbleMessage = styled.p`
 	text-transform: uppercase;
 	overflow: hidden;
-	color: #0b0b0b;
+	color: #1b1f0a;
 `;
 
 const Container = styled.div`
@@ -104,7 +105,7 @@ const TitleName = styled.h1`
 	font-family: 'Zighead', serif;
 	font-size: 220px;
 	text-transform: uppercase;
-	color: #0b0b0b;
+	color: #1b1f0a;
 `;
 
 const Description = styled.p`
@@ -112,11 +113,11 @@ const Description = styled.p`
 	font-family: 'Belleza', sans-serif;
 	line-height: 50px;
 	text-transform: uppercase;
-	color: #0b0b0b;
+	color: #1b1f0a;
 `;
 
 const SurroundedBlock = styled.span`
-	border: solid 1px #0b0b0b;
+	border: solid 1px #1b1f0a;
 	border-radius: 30px;
 	padding: 2px 10px;
 `;
@@ -168,6 +169,7 @@ const Home = () => {
 							kevin.kotcherga@gmail.com
 						</BubbleMessage>
 					</BubbleContainer>
+					<BubbleSlide />
 				</Navbar>
 			</Header>
 			<Container>
