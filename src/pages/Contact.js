@@ -50,6 +50,7 @@ const Footer = styled.div`
 	bottom: 0;
 	display: flex;
 	justify-content: space-between;
+	z-index: 1;
 `;
 
 const ContainerFooter = styled.div`
