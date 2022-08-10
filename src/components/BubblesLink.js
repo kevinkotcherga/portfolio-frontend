@@ -27,9 +27,8 @@ const BubbleLink = styled.div`
 const BubblesLink = () => {
 	return (
 		<BubbleContainer>
-			<BubbleSlide />
-			<BubbleSlide />
-			<BubbleSlide />
+			<BubbleSlide type="linkedin" />
+			<BubbleSlide type="github" />
 		</BubbleContainer>
 	);
 };

@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const BubbleContainer = styled.div`
 	display: flex;
 	align-items: center;
 	height: 25px;
-	width: 25px;
 	background-color: white;
-	border-radius: 12.5px;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
-	:hover {
-		width: 250px;
-		border-radius: 25px;
-	}
 `;
 
 const Bubble = styled.div`
@@ -31,13 +26,43 @@ const BubbleMessage = styled.p`
 	overflow: hidden;
 `;
 
-const BubbleSlide = () => {
+const BubbleSlide = ({ type }) => {
 	const [hover, setHover] = useState(false);
+
+	let message;
+	let icon;
+	let width;
+	if (type === 'email') {
+		message = 'kevin.kotcherga@gmail.com';
+		icon = (
+			<EmailOutlinedIcon
+				sx={{
+					color: '#e9edc9',
+					height: hover ? 10 : 15,
+					width: hover ? 10 : 15,
+					transition: '0.3s ease-in-out',
+				}}
+			/>
+		);
+		width = '260px';
+	} else if (type === 'linkedin') {
+		message = 'in/kevinkotcherga';
+		icon = 'in';
+		width = '200px';
+	} else {
+		message = '@kevinkotcherga';
+		icon = 'gh';
+		width = '195px';
+	}
 
 	return (
 		<BubbleContainer
 			onMouseEnter={() => setHover(true)}
 			onMouseLeave={() => setHover(false)}
+			style={{
+				width: hover ? width : '25px',
+				borderRadius: hover ? '12.5px' : '25px',
+			}}
 		>
 			<Bubble
 				style={{
@@ -46,17 +71,23 @@ const BubbleSlide = () => {
 					borderRadius: hover ? '12,5px' : '7,5px',
 					transition: '0.3s ease-in-out',
 					marginLeft: hover ? '5px' : 0,
+					color: '#e9edc9',
+					textTransform: 'uppercase',
+					fontSize: hover ? 8 : 12,
 				}}
-			></Bubble>
+			>
+				{icon}
+			</Bubble>
 			<BubbleMessage
 				style={{
 					width: hover ? '100%' : 0,
 					opacity: hover ? 1 : 0,
 					marginLeft: hover ? '5px' : 0,
 					transition: hover ? 'opacity 1.4s ease-in-out' : '',
+					color: '#000',
 				}}
 			>
-				kevin.kotcherga@gmail.com
+				{message}
 			</BubbleMessage>
 		</BubbleContainer>
 	);

@@ -30,7 +30,6 @@ const Description = styled.div`
 `;
 
 const ProjectCard = ({ project }) => {
-	console.log(project);
 	return (
 		<Container>
 			<Card>
