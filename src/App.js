@@ -8,11 +8,11 @@ import 'react-use-smooth-scroll/dist/index.css';
 
 function App() {
 	return (
-		<UseEffectScroll>
+		<>
 			<Home />
 			<SelectedWorks />
 			<Contact />
-		</UseEffectScroll>
+		</>
 	);
 }
 

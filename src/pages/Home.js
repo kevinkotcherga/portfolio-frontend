@@ -12,7 +12,7 @@ const MainContainer = styled.div`
 const Header = styled.div`
 	display: flex;
 	justify-content: space-between;
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'Belleza', sans-serif;
 	position: fixed;
 	width: 100%;
@@ -29,6 +29,7 @@ const Name = styled.p`
 	margin-bottom: 8px;
 	text-transform: uppercase;
 	cursor: pointer;
+	font-weight: 600;
 	:after {
 		content: 'Kevin Kotcherga';
 	}
@@ -37,7 +38,9 @@ const Name = styled.p`
 	}
 `;
 
-const City = styled.p``;
+const City = styled.p`
+	color: #7f7874;
+`;
 
 const Navbar = styled.div`
 	margin: 40px;
@@ -58,7 +61,7 @@ const Link = styled.span`
 		content: '';
 		position: absolute;
 		left: 0;
-		top: 20px;
+		top: 18px;
 		width: 0;
 		height: 1px;
 		background-color: #0b0b0b;
@@ -79,10 +82,11 @@ const Container = styled.div`
 
 const Date = styled.p`
 	font-family: 'Viaoda Libre';
-	font-size: 15px;
+	font-size: 18px;
 	color: #0b0b0b;
 	font-style: italic;
 	margin-bottom: 30px;
+	color: #7f7874;
 `;
 
 const TitleName = styled.h1`
@@ -94,7 +98,7 @@ const TitleName = styled.h1`
 `;
 
 const Description = styled.p`
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'Belleza', sans-serif;
 	line-height: 30px;
 	text-transform: uppercase;

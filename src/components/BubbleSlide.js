@@ -5,16 +5,16 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 const BubbleContainer = styled.div`
 	display: flex;
 	align-items: center;
-	height: 25px;
+	height: 30px;
 	background-color: #fdfefa;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
 `;
 
 const Bubble = styled.div`
-	height: 25px;
-	width: 25px;
-	border-radius: 12.5px;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
 	background-color: #242423;
 	display: flex;
 	align-items: center;
@@ -39,8 +39,8 @@ const BubbleSlide = ({ type }) => {
 			<EmailOutlinedIcon
 				sx={{
 					color: '#e9edc9',
-					height: hover ? 10 : 15,
-					width: hover ? 10 : 15,
+					height: hover ? 8 : 13,
+					width: hover ? 8 : 13,
 					transition: '0.3s ease-in-out',
 				}}
 			/>
@@ -61,15 +61,15 @@ const BubbleSlide = ({ type }) => {
 			onMouseEnter={() => setHover(true)}
 			onMouseLeave={() => setHover(false)}
 			style={{
-				width: hover ? width : '25px',
+				width: hover ? width : '30px',
 				borderRadius: hover ? '12.5px' : '25px',
 			}}
 		>
 			<Bubble
 				style={{
-					height: hover ? 17 : 25,
-					width: hover ? 17 : 25,
-					borderRadius: hover ? '12,5px' : '7,5px',
+					height: hover ? 17 : 30,
+					width: hover ? 17 : 30,
+					borderRadius: hover ? '15px' : '7,5px',
 					transition: '0.3s ease-in-out',
 					marginLeft: hover ? '5px' : 0,
 					color: '#e9edc9',
