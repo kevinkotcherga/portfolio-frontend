@@ -1,11 +1,14 @@
+import shop from './images/shop.png';
+import netflix from './images/netflix.png';
+
 export const projects = [
 	{
 		id: 1,
-		img: 'https://staticpages.mngbcn.com/edits/SS22/CAT022022DENIM/assets/images/prices/b_denim_0222_5.jpg?rand=5795148&imwidth=932&imdensity=1.375',
+		img: shop,
 	},
 	{
 		id: 2,
-		img: 'https://st.mngbcn.com/rcs/pics/static/T2/fotos/S20/27035747_05_D1.jpg?ts=1643907107318&imwidth=647&imdensity=2',
+		img: netflix,
 	},
 	{
 		id: 3,
