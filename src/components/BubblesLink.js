@@ -9,7 +9,6 @@ const BubbleContainer = styled.div`
 	position: absolute;
 	bottom: 40px;
 	gap: 20px;
-	z-index: 99;
 `;
 
 const BubblesLink = () => {

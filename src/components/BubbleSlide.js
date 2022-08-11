@@ -9,6 +9,7 @@ const BubbleContainer = styled.div`
 	background-color: #fdfefa;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
+	z-index: 99;
 `;
 
 const Bubble = styled.div`

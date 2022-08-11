@@ -64,11 +64,18 @@ const TextFooter = styled.p`
 	text-transform: uppercase;
 `;
 const ButtonTop = styled.div`
-	text-transform: uppercase;
 	margin: 40px;
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+`;
+
+const ButtonText = styled.p`
+	text-transform: uppercase;
+	:hover {
+		transition: 0.2s;
+		opacity: 0.5;
+	}
 `;
 
 const Contact = () => {
@@ -84,7 +91,8 @@ const Contact = () => {
 					<TextFooter>Made by Kevin Kotcherga</TextFooter>
 				</ContainerFooter>
 				<ButtonTop>
-					Back to top{' '}
+					<ButtonText>Back to top</ButtonText>
+
 					<NorthOutlinedIcon sx={{ height: '15px', marginLeft: '5px' }} />
 				</ButtonTop>
 			</Footer>
