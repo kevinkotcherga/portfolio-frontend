@@ -25,6 +25,7 @@ const Bubble = styled.div`
 const BubbleMessage = styled.p`
 	text-transform: uppercase;
 	overflow: hidden;
+	font-size: 13px;
 `;
 
 const BubbleSlide = ({ type }) => {
@@ -50,11 +51,11 @@ const BubbleSlide = ({ type }) => {
 	} else if (type === 'linkedin') {
 		message = 'in/kevinkotcherga';
 		icon = 'in';
-		width = '200px';
+		width = '170px';
 	} else {
 		message = '@kevinkotcherga';
 		icon = 'gh';
-		width = '195px';
+		width = '165px';
 	}
 
 	return (
