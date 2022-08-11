@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BubblesLink from '../components/BubblesLink';
+import NorthOutlinedIcon from '@mui/icons-material/NorthOutlined';
 
 const Container = styled.div`
 	height: 100vh;
@@ -51,6 +52,8 @@ const Footer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
+	font-family: 'Belleza', sans-serif;
+	font-size: 13px;
 `;
 
 const ContainerFooter = styled.div`
@@ -63,6 +66,9 @@ const TextFooter = styled.p`
 const ButtonTop = styled.div`
 	text-transform: uppercase;
 	margin: 40px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
 `;
 
 const Contact = () => {
@@ -77,7 +83,10 @@ const Contact = () => {
 					<DateFooter>© 2022</DateFooter>
 					<TextFooter>Made by Kevin Kotcherga</TextFooter>
 				</ContainerFooter>
-				<ButtonTop>Back to top</ButtonTop>
+				<ButtonTop>
+					Back to top{' '}
+					<NorthOutlinedIcon sx={{ height: '15px', marginLeft: '5px' }} />
+				</ButtonTop>
 			</Footer>
 		</Container>
 	);

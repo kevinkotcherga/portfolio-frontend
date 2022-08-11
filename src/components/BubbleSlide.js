@@ -45,7 +45,7 @@ const BubbleSlide = ({ type }) => {
 				}}
 			/>
 		);
-		width = '260px';
+		width = '230px';
 	} else if (type === 'linkedin') {
 		message = 'in/kevinkotcherga';
 		icon = 'in';
