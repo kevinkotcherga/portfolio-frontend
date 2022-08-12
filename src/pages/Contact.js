@@ -22,21 +22,21 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-	font-family: 'Zighead', serif;
-	font-size: 250px;
+	font-family: 'Italiana', sans-serif;
+	font-size: 300px;
 	text-align: center;
 	color: #0b0b0b;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
-	text-transform: uppercase;
+
 	::before {
 		content: '';
 		position: absolute;
 		left: 0;
 		bottom: 0;
 		width: 0;
-		height: 3px;
+		height: 1px;
 		background-color: #0b0b0b;
 		transition: width 0.3s ease-out;
 	}
