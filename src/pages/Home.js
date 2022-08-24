@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const MainContainer = styled.div`
 	height: 100vh;
-	background-color: #e9edc9;
+	background-color: #fefae0;
 	position: relative;
 `;
 
@@ -29,7 +29,7 @@ const Name = styled.p`
 	margin-bottom: 8px;
 	text-transform: uppercase;
 	cursor: pointer;
-	font-weight: 600;
+	font-weight: 500;
 	:after {
 		content: 'Kevin Kotcherga';
 	}
@@ -91,7 +91,7 @@ const Date = styled.p`
 
 const TitleName = styled.h1`
 	font-weight: normal;
-	font-family: 'Zighead', serif;
+	font-family: 'Italiana', serif;
 	font-size: 12vw;
 	text-transform: uppercase;
 	color: #0b0b0b;
