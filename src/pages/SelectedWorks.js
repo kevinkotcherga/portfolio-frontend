@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data';
 
 const MainContainer = styled.div`
-	background-color: #fefefe;
+	background-color: #e9edc9;
 `;
 
 const Title = styled.p`

@@ -5,7 +5,7 @@ import NorthOutlinedIcon from '@mui/icons-material/NorthOutlined';
 
 const Container = styled.div`
 	height: 100vh;
-	background-color: #e9edc9;
+	background-color: #fefae0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
