@@ -23,7 +23,6 @@ const Bubble = styled.div`
 `;
 
 const BubbleMessage = styled.p`
-	text-transform: uppercase;
 	overflow: hidden;
 	font-size: 13px;
 `;
