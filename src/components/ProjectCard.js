@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-	width: 49%;
+	width: 46%;
 `;
 
 const Card = styled.div`
@@ -19,12 +19,15 @@ const Img = styled.img`
 
 const ContainerDescription = styled.div`
 	text-align: center;
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Epilogue', sans-serif;
 	font-size: 16px;
 	margin: 30px 0 200px 0;
 `;
 
-const Name = styled.div``;
+const Name = styled.div`
+	margin-bottom: 5px;
+`;
+
 const Description = styled.div`
 	color: #787878;
 `;

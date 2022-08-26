@@ -7,13 +7,13 @@ const MainContainer = styled.div`
 	height: 100vh;
 	background-color: #fefae0;
 	position: relative;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 13px;
 `;
 
 const Header = styled.div`
 	display: flex;
 	justify-content: space-between;
-	font-size: 13px;
-	font-family: 'Belleza', sans-serif;
 	position: fixed;
 	width: 100%;
 	z-index: 99;
@@ -81,8 +81,6 @@ const Container = styled.div`
 `;
 
 const Date = styled.p`
-	font-family: 'Belleza';
-	font-size: 18px;
 	color: #0b0b0b;
 	font-style: italic;
 	margin-bottom: 30px;
@@ -98,8 +96,6 @@ const TitleName = styled.h1`
 `;
 
 const Description = styled.p`
-	font-size: 13px;
-	font-family: 'Belleza', sans-serif;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #0b0b0b;
@@ -108,7 +104,7 @@ const Description = styled.p`
 const SurroundedBlock = styled.span`
 	border: solid 1px #1b1f0a;
 	border-radius: 30px;
-	padding: 2px 10px;
+	padding: 4px 10px 2px 10px;
 `;
 
 const Home = () => {

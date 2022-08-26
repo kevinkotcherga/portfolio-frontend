@@ -52,7 +52,7 @@ const Footer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	z-index: 1;
-	font-family: 'Belleza', sans-serif;
+	font-family: 'Epilogue', sans-serif;
 	font-size: 13px;
 `;
 
