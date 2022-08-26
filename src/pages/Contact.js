@@ -5,7 +5,7 @@ import NorthOutlinedIcon from '@mui/icons-material/NorthOutlined';
 
 const Container = styled.div`
 	height: 100vh;
-	background-color: #fefae0;
+	background-color: #ccd5ae;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,7 +25,7 @@ const Text = styled.p`
 	font-family: 'Italiana', sans-serif;
 	font-size: 300px;
 	text-align: center;
-	color: #0b0b0b;
+	color: #fefefe;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
@@ -37,7 +37,7 @@ const Text = styled.p`
 		bottom: 0;
 		width: 0;
 		height: 1px;
-		background-color: #0b0b0b;
+		background-color: #fefefe;
 		transition: width 0.3s ease-out;
 	}
 	:hover::before {

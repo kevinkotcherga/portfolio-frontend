@@ -81,7 +81,7 @@ const Container = styled.div`
 `;
 
 const Date = styled.p`
-	font-family: 'Viaoda Libre';
+	font-family: 'Belleza';
 	font-size: 18px;
 	color: #0b0b0b;
 	font-style: italic;
