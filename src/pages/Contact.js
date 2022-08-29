@@ -25,7 +25,7 @@ const Text = styled.p`
 	font-family: 'Italiana', sans-serif;
 	font-size: 300px;
 	text-align: center;
-	color: #fefefe;
+	color: #0b0b0b;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
