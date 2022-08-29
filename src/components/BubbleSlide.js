@@ -46,15 +46,15 @@ const BubbleSlide = ({ type }) => {
 				}}
 			/>
 		);
-		width = '210px';
+		width = '195px';
 	} else if (type === 'linkedin') {
 		message = 'in/kevinkotcherga';
 		icon = 'in';
-		width = '145px';
+		width = '125px';
 	} else {
 		message = '@kevinkotcherga';
 		icon = 'gh';
-		width = '140px';
+		width = '120px';
 	}
 
 	return (
