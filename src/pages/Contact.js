@@ -36,7 +36,7 @@ const Text = styled.p`
 		left: 0;
 		bottom: 0;
 		width: 0;
-		height: 1px;
+		height: 2px;
 		background-color: #fefefe;
 		transition: width 0.3s ease-out;
 	}

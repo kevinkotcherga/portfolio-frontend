@@ -82,9 +82,10 @@ const Container = styled.div`
 
 const Date = styled.p`
 	color: #0b0b0b;
+	font-size: 18px;
 	font-style: italic;
+	font-family: 'Viaoda Libre', cursive;
 	margin-bottom: 30px;
-	color: #7f7874;
 `;
 
 const TitleName = styled.h1`
