@@ -7,7 +7,7 @@ const MainContainer = styled.div`
 	height: 100vh;
 	background-color: #fefae0;
 	position: relative;
-	font-family: 'Epilogue', sans-serif;
+	font-family: 'Belleza', sans-serif;
 	font-size: 13px;
 `;
 
