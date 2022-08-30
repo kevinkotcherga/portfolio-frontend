@@ -85,7 +85,12 @@ const Date = styled.p`
 	font-size: 18px;
 	font-style: italic;
 	font-family: 'Viaoda Libre', cursive;
-	margin-bottom: 30px;
+`;
+
+const Symbol = styled.span`
+	position: relative;
+	top: -8px;
+	font-size: 12px;
 `;
 
 const TitleName = styled.h1`
@@ -146,7 +151,9 @@ const Home = () => {
 				</Navbar>
 			</Header>
 			<Container>
-				<Date>(Folio 2022 - Since 2020)</Date>
+				<Date>
+					(Folio 2022 - Since 2020 <Symbol>©</Symbol>)
+				</Date>
 				<TitleName>
 					Kevin
 					<br />
