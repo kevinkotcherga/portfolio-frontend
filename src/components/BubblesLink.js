@@ -7,7 +7,7 @@ const BubbleContainer = styled.div`
 	width: 100%;
 	justify-content: center;
 	position: absolute;
-	bottom: 40px;
+	bottom: 20px;
 	gap: 20px;
 `;
 
