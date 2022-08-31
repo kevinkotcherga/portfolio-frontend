@@ -91,6 +91,7 @@ const Symbol = styled.span`
 	position: relative;
 	top: -8px;
 	font-size: 12px;
+	font-weight: bold;
 `;
 
 const TitleName = styled.h1`
